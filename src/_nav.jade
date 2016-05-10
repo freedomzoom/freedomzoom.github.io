@@ -1,0 +1,23 @@
+mixin item-link(slug, name, currentName)
+    if currentName == name
+        li.c-nav__list__item.is-selected
+            a(href=slug)= name
+    else
+        li.c-nav__list__item
+            a(href=slug)= name
+
+mixin item-decoration(content)
+    li.c-nav__list__item.c-nav__list__item--decoration= content
+
+mixin nav(currentName)
+    nav.c-nav
+        h1.c-nav__title Zoë Osenbach Bookkeeping
+
+        ul.c-nav__list
+            +item-link('/', 'About', currentName)
+            +item-decoration('÷')
+            +item-link('/services', 'Services', currentName)
+            +item-decoration('×')
+            +item-link('/resources', 'Resources', currentName)
+            +item-decoration('+')
+            +item-link('/contact', 'Contact', currentName)

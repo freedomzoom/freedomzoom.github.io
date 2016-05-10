@@ -1,0 +1,25 @@
+- var TITLE = 'Zoë Osenbach Bookkeeping'
+- var DESCRIPTION = 'TODO'
+- var URL = 'http://ZoeOBookkeeping.com'
+- var IMG = URL + '/dist/img/TODO.jpg'
+
+head
+    meta(charset="utf-8")
+    meta(content="IE=edge", http-equiv="X-UA-Compatible")
+    meta(content="width=device-width, initial-scale=1", name="viewport")
+    link(rel='shortcut icon', href='favicon.ico', type='image/x-icon')
+    link(rel='icon', href='favicon.ico', type='image/x-icon')
+
+    title #{TITLE}
+
+    meta(name='description',          content='#{DESCRIPTION}')
+    meta(property='og:type',          content='website')
+    meta(property='og:url',           content='#{URL}')
+    meta(property='og:title',         content='#{TITLE}')
+    meta(property='og:image',         content='#{IMG}')
+    meta(property='og:description',   content='#{DESCRIPTION}')
+
+    // build:css(.) /dist/css/style.min.css
+    link(rel="stylesheet", href="/bower_components/normalize.css/normalize.css")
+    link(rel="stylesheet", href="/dist/css/style.css")
+    // endbuild

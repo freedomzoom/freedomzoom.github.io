@@ -1,0 +1,83 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  height: 100%; }
+
+body {
+  background-color: #92DCCB;
+  height: 100%;
+  font-size: 14px;
+  margin: 0; }
+
+.c-nav {
+  background: url(/dist/img/background.png);
+  background-position: center;
+  background-size: 150px;
+  height: 300px;
+  width: 100%; }
+
+.c-nav__title {
+  color: #7CA3F2;
+  line-height: 250px;
+  margin: 0;
+  text-align: center; }
+
+.c-nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%; }
+
+.c-nav__list__item {
+  background: #7CA3F2;
+  color: white;
+  display: block;
+  float: left;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 50px;
+  margin-left: 20px;
+  text-align: center;
+  width: calc(100% / 7 - 22.85714px); }
+  .c-nav__list__item a {
+    color: white;
+    display: block;
+    text-decoration: none; }
+    .c-nav__list__item a:hover {
+      background: #92DCCB; }
+
+.c-content {
+  color: white;
+  margin: 40px auto;
+  max-width: 500px; }
+
+a {
+  color: #fe8181; }
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.u-clearfix:before, .u-clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.u-clearfix:after {
+  clear: both; }
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.u-clearfix {
+  *zoom: 1; }
