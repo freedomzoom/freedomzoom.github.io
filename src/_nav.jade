@@ -11,9 +11,11 @@ mixin item-decoration(content)
 
 mixin nav(currentName)
     nav.c-nav
-        h1.c-nav__title Zoë Osenbach Bookkeeping
+        .c-nav__hero
+            h1.c-nav__title Zoë Osenbach Bookkeeping
+            h3.c-nav__subtitle Solutions, Organization, Success
 
-        ul.c-nav__list
+        ul.c-nav__list.u-clearfix
             +item-link('/', 'About', currentName)
             +item-decoration('÷')
             +item-link('/services', 'Services', currentName)

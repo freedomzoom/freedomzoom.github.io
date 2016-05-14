@@ -36,38 +36,46 @@ h1, h2, h3, h4, h5, h6 {
     background-color: $blue;
 }
 
-$nav-height: 300px;
+$hero-height: 200px;
 $item-height: 70px;
 .c-nav {
     background: url(/dist/img/background.png);
     background-position: center;
     background-size: 150px;
     border-bottom: 1px solid $dark-green;
-    height: $nav-height;
     width: 100%;
-
-    @media (max-width: $breakpoint-tablet) {
-        height: $nav-height + $item-height + 2px;
-    }
 }
+
+    .c-nav__hero {
+        padding: 50px 10px;
+        text-align: center;
+        text-shadow: 0 0 30px white;
+    }
 
     .c-nav__title {
         color: $blue;
         font-size: 50px;
-        height: $nav-height - $item-height;
         margin: 0;
-        padding: 90px 10px;
-        text-align: center;
-        text-shadow: 0 0 30px white;
 
         @media (max-width: $breakpoint-tablet) {
-            padding: 50px 30px;
+            font-size: 40px;
+        }
+    }
+
+    .c-nav__subtitle {
+        color: darken($blue, 20%);
+        font-size: 30px;
+        margin: 15px 0 0;
+
+        @media (max-width: $breakpoint-tablet) {
+            font-size: 20px;
         }
     }
 
     .c-nav__list {
         list-style: none;
         margin: 0 auto;
+        margin-bottom: -1px;
         padding: 0;
         max-width: $breakpoint-tablet;
     }
