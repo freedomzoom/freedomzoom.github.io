@@ -123,15 +123,17 @@ h1, h2, h3, h4, h5, h6 {
   margin: 50px 20px 40px 0;
   width: 100px; }
 
-.c-centered-big {
-  text-align: center;
-  font-size: 26px; }
-
-.c-centered-big a {
-  color: #fff; }
+.c-contact-list {
+  font-size: 26px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center; }
+  .c-contact-list li {
+    margin-bottom: 20px; }
 
 a {
-  color: #fe8181; }
+  color: white; }
 
 /**
  * For modern browsers

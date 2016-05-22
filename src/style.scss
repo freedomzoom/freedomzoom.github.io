@@ -168,18 +168,21 @@ $item-height: 70px;
             width: 100px;
         }
 
-        .c-centered-big {
-            text-align: center;
+        .c-contact-list {
             font-size: 26px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+
+            li {
+                margin-bottom: 20px;
+            }
         }
 
-            .c-centered-big a {
-                color: #fff;
-            }
-
-a {
-    color: #fe8181;
-}
+    a {
+        color: white;
+    }
 
 /**
  * For modern browsers
