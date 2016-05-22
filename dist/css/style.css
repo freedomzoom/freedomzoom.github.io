@@ -117,6 +117,12 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 740px;
   padding: 40px; }
 
+.c-certification {
+  border: 1px solid white;
+  float: left;
+  margin: 50px 20px 40px 0;
+  width: 100px; }
+
 a {
   color: #fe8181; }
 
