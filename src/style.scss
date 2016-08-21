@@ -1,17 +1,18 @@
 @import '../bower_components/bourbon/dist/_bourbon';
-@import url(https://fonts.googleapis.com/css?family=Cinzel:700|Poiret+One);
+@import url(https://fonts.googleapis.com/css?family=Cinzel:700|Arima+Madurai:700);
 
 $headline-font: 'Cinzel';
-$body-font: 'Poiret One';
+$body-font: 'Arima Madurai';
 
 $breakpoint-tablet: 740px;
 
-$green: #71CCB7;
+$green: #9CE0D0;
 $blue: #759AE6;
 //$dark-green: darken($green, 25%);
 //$dark-blue: darken($blue, 30%);
 $dark-green: white;
 $dark-blue: white;
+$black: #333333;
 
 * { @include box-sizing(border-box); }
 
@@ -142,7 +143,7 @@ $item-height: 70px;
             }
 
             a {
-                color: white;
+                color: $black;
                 display: block;
                 text-decoration: none;
             }
@@ -155,7 +156,7 @@ $item-height: 70px;
         }
 
     .c-content {
-        color: white;
+        color: $black;
         margin: 0 auto;
         max-width: $breakpoint-tablet;
         padding: 40px;
@@ -181,7 +182,7 @@ $item-height: 70px;
         }
 
     a {
-        color: white;
+        color: $black;
     }
 
 /**
